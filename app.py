@@ -6,7 +6,7 @@ from langchain.agents import initialize_agent,AgentType
 from langchain.callbacks import StreamlitCallbackHandler
 from langchain_groq import ChatGroq
 access_key=st.secrets['GROQ_API_KEY']
-
+####
 
 api_wrapper_wiki=WikipediaAPIWrapper(top_k_results=1,doc_content_chars_max=250)
 wiki=WikipediaQueryRun(api_wrapper=api_wrapper_wiki)
